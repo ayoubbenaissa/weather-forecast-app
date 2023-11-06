@@ -1,0 +1,11 @@
+// importing common colors
+@use "variables";
+
+.home-page {
+  height: 100%;
+  width: 100%;
+
+  /* example padding, font-size, background, etc */
+  padding: 10px;
+  font-size: 20px;
+}
