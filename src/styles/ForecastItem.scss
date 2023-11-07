@@ -1,0 +1,40 @@
+@use "variables";
+
+.forecast-item_wrapper {
+  width: fit-content;
+  padding: 15px 50px;
+  border-radius: 15px;
+  background-color: variables.$white;
+  box-shadow: 10px 5px 5px #b3b2b2;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.forecat-item_field {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.forecat-item_field_label {
+  color: variables.$gray;
+  font-weight: 600;
+  margin-right: 3px;
+}
+
+.forecat-item_field_value {
+  font-weight: 600;
+}
+
+.forecat-item_actions {
+  margin-top: 10px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.forecat-item_actions:hover {
+  color: variables.$gold-theme;
+}

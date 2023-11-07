@@ -6,3 +6,11 @@ export const getForecastInfo = async () => {
     return forecastCall.data;
   }
 };
+
+export const getDayFromDate = (day: string): string => {
+  return /\d*-\d*-\d*/.exec(day)?.pop() || '';
+};
+
+export const getTimeFromDate = (day: string): string => {
+  return /\d*:\d*/.exec(day)?.pop() || '';
+}
