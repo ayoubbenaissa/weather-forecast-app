@@ -13,7 +13,7 @@ export const Forecast = () => {
   if (isLoading) return <InfoSpinner infoText="fetching forecast data ..." />;
 
   // this will be displayed in case the call fails:
-  if (error) return <Error errorMessage={JSON.stringify((error as Error).message || "error")} />;
+  if (error) return <Error errorMessage={JSON.stringify((error as any).response?.data?.message || "error")} />;
 
   if (forecastData) {
     const forecastPlainData = forecastData.list;

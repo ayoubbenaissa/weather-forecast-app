@@ -1,6 +1,6 @@
 @use "variables";
 
-.spinner-page {
+.error-page {
   height: 100%;
   width: 100%;
   padding: 10px;
@@ -10,26 +10,29 @@
   justify-content: center;
 }
 
-.spinner-page_content {
+.error-page_content {
   padding: 20px 40px;
   border-radius: 20px;
   background-color: variables.$white;
   box-shadow: 10px 5px 5px #b3b2b2;
+  border-left: 5px solid #e95050;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.spinner {
-  width: 50px;
-  animation: Spin-loading infinite 5s linear;
-}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 
-@keyframes Spin-loading {
-  from {
-    transform: rotate(0deg);
+  img {
+    width: 22px;
+    margin-right: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .error-notification {
+    font-size: 20px;
+    font-weight: 600;
   }
 }
