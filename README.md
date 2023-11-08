@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# App
+
+this is a simple FE app to fetch and display weather data, and it communicates with [OpenWeather API](https://openweathermap.org/)
+
+## running code
+
+- Pre-requirements :building_construction: :
+  - make sure you have [**nodejs**](https://nodejs.org/en/download) installed in your machine (ideally Long Time Support version)
+  - make sure you also have [npm](https://learnubuntu.com/install-npm/)
+- Install dependencies:
+  - run `npm install` which will install all app deps
+  - run `npm start` to start the frontend server
+
+## app deps
+
+this frontend app is created by [Create React App](https://facebook.github.io/create-react-app/docs/getting-started), and uses [React](https://reactjs.org/) to generate the UI and the different components. <br/>
+To make API calls, I used [axios](https://axios-http.com/) combined with [React-query](https://tanstack.com/query/v3/) <br/>
+Testing was done via [jest](https://jestjs.io/) and [react-testing-library] (https://testing-library.com/docs/react-testing-library/intro/) <br/>
+And styling was done by [sass](https://sass-lang.com/);
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
