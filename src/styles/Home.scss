@@ -1,21 +1,15 @@
 // importing common colors
 @use "variables";
 
+// importing mixins
+@use "mixins";
+
 .home-page {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include mixins.page_styling;
 }
 
 .home-page_content {
-  padding: 20px 40px;
-  border-radius: 20px;
-  background-color: variables.$white;
-  box-shadow: 10px 5px 5px #b3b2b2;
+  @include mixins.page-content_styling;
 }
 
 .home-welcome {
