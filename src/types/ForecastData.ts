@@ -38,15 +38,22 @@ export interface ForecastPlainData {
   dt_txt: string;
 }
 
-/**   ****** my defined types ******   **/
-type WeatherInfo = {
-  temperature: number;
-  humidity: number;
-  weather: string;
-};
-
-export interface ForecastDataListItem {
-  day: string; // dt_txt
-  time: string;
-  weatherInfo: WeatherInfo;
+export interface ForecastCallResponse {
+  cod: string;
+  message: number;
+  cnt: number;
+  list: ForecastPlainData[];
+  city: {
+    id: number;
+    name: string;
+    coord: {
+      lat: number;
+      lon: number;
+    };
+    country: string;
+    population: number;
+    timezone: number;
+    sunrise: number;
+    sunset: number;
+  }
 }
