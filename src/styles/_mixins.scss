@@ -15,4 +15,16 @@
   border-radius: 20px;
   background-color: variables.$white;
   box-shadow: 10px 5px 5px #b3b2b2;
-};
+}
+
+@mixin page-content_small_devices {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: variables.$white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+}
